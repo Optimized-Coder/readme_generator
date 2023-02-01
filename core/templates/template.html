@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% block main %}
+<div class="template">
+    <h2>View your template</h2>
+
+    <h3>
+        # {{ session.get('doc_title', None) }}
+    </h3>
+    <p>
+        {{ session.get('desc', None) }}
+    </p>
+    <h4>## Links</h4>
+    <ul>
+        <li>
+            [repo] ({{session.get('repo_link', None)}}) "Twitter Top 50 Repo"
+        </li>
+        <li>
+            [Bugs] ({{session.get('bugs_link', None)}}) "Issues Page"
+        </li>
+    </ul>
+    <h4>
+        ## Tech Used
+    </h4>
+    <ul>
+        <li>{{ session.get('tech_used', None) }}</li>
+    </ul>
+    <h4>## Author</h4>
+    **{{session.get('author', None)}}**
+    <br>
+    <ul>
+        <li>
+            [profile] (https://github.com/{{session.get('username', None)}} '{{author}}')
+        </li>
+        <li>
+            [email] (mailto: {{session.get('email', None)
+        }}?subject=Hi) '{{session.get('author', None)}}')
+        </li>
+    </ul>
+    <h4>## Support</h4>
+    <p>
+        Contributions, issues, and feature requests are welcome!
+        <br>
+        Give a STAR if you like this project!
+
+    </p>
+</div>
+{% endblock %}

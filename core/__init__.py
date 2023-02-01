@@ -7,7 +7,7 @@ secret_key = os.getenv('my_secret_key')
 
 def create_app():
     app = Flask(__name__)
-    app.config['SECRET_KEY'] = secret_key
+    app.config['SECRET_KEY'] = 'fivfvnfvhfvf'
 
     # register bp's
     from .main import bp as main_bp
