@@ -22,7 +22,11 @@
         ## Tech Used
     </h4>
     <ul>
-        <li>{{ session.get('tech_used', None) }}</li>
+        {% for tech in session.get('tech_used', None).split(', ') %}
+        <li>
+            {{tech}}
+        </li>
+        {% endfor %}
     </ul>
     <h4>## Author</h4>
     **{{session.get('author', None)}}**
