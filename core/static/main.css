@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header {
+    min-height: 10vh;
+    max-width: 100vw;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 5px 0;
+}
+
+header nav.main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+header nav.main-nav li {
+    list-style-type: none;
+}
+header nav.main-nav a {
+    text-decoration: none;
+    color: black;
+    padding: .5rem 3rem;
+}
+header nav.main-nav a:hover {
+    text-decoration: underline;
+    color: white;
+    background-color:black;
+}
+
+main {
+    min-height: 80vh;
+    max-width: 100vw;
+    
+} 
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 3rem;
+}
+
+.inputs h1 {
+    padding: 1rem;
+} .inputs label {
+    font-size: 1.2rem;
+    padding: 1rem 0;
+    display: block;
+} .inputs input {
+    width: 18rem;
+    height: 2rem;
+    padding: .2rem;
+} .inputs input[type='submit'] {
+    margin-top: 1rem;
+}
+
+footer {
+    min-height: 10vh;
+    max-width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 2px solid rgba(0, 0, 0, 0.3)
+}
+
+footer a {
+    text-decoration: none;
+    color:black;
+}
+footer a:hover {
+    text-decoration: underline;
+}

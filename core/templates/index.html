@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block main %}
+<div class="inputs">
+    <form action="" method="post">
+        <section>
+            <label for="title">Title</label>
+        <input type="text" name="title" id="title" class="main-input">
+        </section>
+        
+        <section>
+            <label for="repo_link">Repo Link</label>
+        <input type="text" name="repo_link" id="repo_link" class="main-input">
+        </section>
+        
+        <section>
+            <label for="bugs_link">Bugs Link</label>
+        <input type="text" name="bugs_link" id="bugs_link" class="main-input">
+        </section>
+        
+        <section>
+            <label for="tech_used">Tech Used <br> (separate with comma)</label>
+        <input type="text" name="tech_used" id="tech_used" class="main-input">
+        </section>
+        
+        <section>
+            <label for="author">Author</label>
+        <input type="text" name="author" id="author" class="main-input">
+        </section>
+    
+        <input type="submit">
+    </form>
+    
+</div>
+
+{% endblock %}
